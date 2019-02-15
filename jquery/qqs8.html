@@ -132,6 +132,25 @@ $("#test").addClass("load");
     </script>
 <h2> Question 9 Get dropdown selected value on onchanage event and append in div container</h2>
 
+<select>
+    <option value="qe">QE</option>
+    <option value="jvm">JVM</option>
+    <option value="devops">DEvops</option>
+    <option value="python">Python</option>
+</select>
+
+<script>
+    var el = $("<p></p>",{
+        id : "new_id",
+        class : "new_class"
+    });
+    var dropD = $("<br><select><option value='qe'>QE</option><option value='jvm'>JVM</option><option value='devops'>DEvops</option><option value='Python'>Python</option></select>");
+el.appendTo($("body"));
+
+$("select").change(function(){
+$(".appendHere").append($(this).children("option:selected").val()+"<br>");
+});
+</script>
 <h2>Question10 Create a dropdown menu using hover method in jquery</h2>
 
 <select>
@@ -140,6 +159,7 @@ $("#test").addClass("load");
     <option value="devops">DEvops</option>
     <option value="python">Python</option>
 </select>
+
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <script>
     var el = $("<p></p>",{
@@ -149,11 +169,7 @@ $("#test").addClass("load");
 
     var dropD = $("<br><select><option value='qe'>QE</option><option value='jvm'>JVM</option><option value='devops'>DEvops</option><option value='Python'>Python</option></select>");
 
-    el.appendTo($("body"));
 
-    $("select").change(function(){
-        $(".appendHere").append($(this).children("option:selected").val()+"<br>");
-    });
     $(document).ready(function () {
     $( ".hoverMe" ).hover(
         function() {
