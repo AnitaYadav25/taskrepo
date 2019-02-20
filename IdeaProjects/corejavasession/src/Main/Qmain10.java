@@ -42,7 +42,9 @@ public class Qmain10 {
         for (Car c : Car.values())
             System.out.println(
                     c + " costs " + c.getPrice() + " lacks.");
+        System.out.println("----------------");
 
+        System.out.println("Output of question11");
        SBI obj1=new SBI();
        obj1.setRateofintrest(12.900);
        System.out.print("rate of intrest of SBI is"+obj1.getRateofintrest());

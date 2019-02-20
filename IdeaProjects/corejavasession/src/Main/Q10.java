@@ -252,7 +252,8 @@ public void Question1(String str,String sub,String replace){
             return price;
         }
     }
-//Question10
+//Question11
+
         class Bank {
 
         double rateofintrest;
