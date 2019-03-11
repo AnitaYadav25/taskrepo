@@ -71,7 +71,6 @@ public class Qmain10 {
         System.out.println("policies of ICICI are:"+obj3.getPolicies());
 
 
-
     }
 }
 

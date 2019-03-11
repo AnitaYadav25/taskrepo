@@ -17,8 +17,6 @@ public class Question4 {
 
     public static void main(String[] args) {
         Question4 a = Question4.getInstance();
-
-
         System.out.println(a.s);
 
     }
